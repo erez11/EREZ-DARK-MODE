@@ -1,5 +1,7 @@
 # EREZ-DARK-MODE
 
+**Repository:** https://github.com/erez11/EREZ-DARK-MODE
+
 React app implementing the **Dark Mode Toggle** from [UIFeatureDesign](docs/UIFeatureDesign.md).  
 Built against JIRA stories (label `EREZ-DARK-MODE`, project JDEMO).
 
