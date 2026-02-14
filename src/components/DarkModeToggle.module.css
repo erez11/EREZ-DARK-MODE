@@ -1,0 +1,82 @@
+/* Contrast ≥ 4.5:1, transition 0.3s ease-in-out per design */
+
+.wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-6px);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  background: var(--tooltip-bg);
+  color: var(--tooltip-text);
+}
+
+.wrapper:hover .tooltip,
+.wrapper:focus-within .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-4px);
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.toggle:hover {
+  background: var(--toggle-hover);
+}
+
+.toggle:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* Checkbox-style track */
+.track {
+  display: inline-flex;
+  align-items: center;
+  width: 44px;
+  height: 24px;
+  padding: 2px;
+  border-radius: 12px;
+  background: var(--track-bg);
+  transition: background 0.3s ease-in-out;
+}
+
+.thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--thumb-bg);
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+[aria-pressed="true"] .thumb {
+  transform: translateX(20px);
+}
+
+.icon {
+  font-size: 1.25rem;
+  line-height: 1;
+  transition: filter 0.3s ease-in-out;
+}

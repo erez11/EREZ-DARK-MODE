@@ -1,0 +1,52 @@
+/* Global theme variables - contrast ≥ 4.5:1 (WCAG AA) */
+:root,
+[data-theme="light"] {
+  --page-bg: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #333333;
+  --header-bg: #f5f5f5;
+  --border: #e0e0e0;
+  --avatar-bg: #e8e8e8;
+  --track-bg: #ccc;
+  --thumb-bg: #fff;
+  --toggle-hover: rgba(0, 0, 0, 0.06);
+  --focus-ring: #0066cc;
+  --tooltip-bg: #333;
+  --tooltip-text: #fff;
+}
+
+[data-theme="dark"] {
+  --page-bg: #2d2d2d;
+  --text-primary: #e8e8e8;
+  --text-secondary: #c0c0c0;
+  --header-bg: #1e1e1e;
+  --border: #404040;
+  --avatar-bg: #333;
+  --track-bg: #555;
+  --thumb-bg: #e0e0e0;
+  --toggle-hover: rgba(255, 255, 255, 0.08);
+  --focus-ring: #66b3ff;
+  --tooltip-bg: #e0e0e0;
+  --tooltip-text: #1a1a1a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--page-bg);
+  color: var(--text-primary);
+}
+
+#root {
+  min-height: 100vh;
+}

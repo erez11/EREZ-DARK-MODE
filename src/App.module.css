@@ -1,0 +1,23 @@
+.app {
+  min-height: 100vh;
+  background: var(--page-bg);
+  color: var(--text-primary);
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.main {
+  padding: 2rem 1.5rem;
+  max-width: 60ch;
+}
+
+.main h1 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.main p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
